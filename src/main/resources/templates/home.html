@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>설문조사 사이트</title>
+    <title>Easy Survey Making</title>
     <link rel="stylesheet" href="/css/home.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
     <ul>
         <li><a href="/create">설문 만들기</a></li>
         <li><a href="#">내 설문</a></li>
-        <li><a href="#">로그인</a></li>
+        <li><a href="/login">로그인</a></li>
     </ul>
 </nav>
 
@@ -25,6 +25,15 @@
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
     <div class="indicators"></div>
+</div>
+
+<div class="btn-grid-wrap">
+    <div class="btn-grid">
+        <button class="grid-btn btn-primary">새 설문 만들기</button>
+        <button class="grid-btn btn-secondary">내가 만든 설문</button>
+        <button class="grid-btn btn-warning">응답 확인</button>
+        <button class="grid-btn btn-muted">설정</button>
+    </div>
 </div>
 
     <script src="/js/home.js"></script>

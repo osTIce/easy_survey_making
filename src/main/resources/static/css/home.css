@@ -79,6 +79,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     z-index: 100;
 }
+
 .prev { left: 20px; }
 .next { right: 20px; }
 .prev:hover, .next:hover {
@@ -94,6 +95,7 @@ nav ul li a:hover {
     display: flex;
     gap: 10px;
 }
+
 .indicators button {
     width: 12px;
     height: 12px;
@@ -103,6 +105,57 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .indicators button.active {
     background-color: #4CAF50;
 }
+
+/* 버튼 4개 */
+.btn-grid-wrap {
+    margin-top: 20px;
+    width:100%;
+}
+
+/* 그리드: 2열, 자동 높이 동일 유지 (aspect-ratio로 버튼 비율 유지) */
+.btn-grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:18px;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+/* 버튼 스타일 (블록형, 가운데 정렬, 반응형 텍스트) */
+.grid-btn {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding: 1rem;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform .14s ease, box-shadow .14s ease, background .14s;
+    font-weight:600;
+    font-size: clamp(16px, 2.4vw, 20px); /* 반응형 폰트 */
+    aspect-ratio: 2.6 / 1; /* 가로:세로 비율 — 필요하면 조절 */
+}
+
+.grid-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+    background: #429646;
+}
+
+/* 선택적으로 버튼별 색상 */
+.btn-primary { background: #4caf50; }
+.btn-secondary { background: #2196f3; }
+.btn-warning { background: #ff9800; }
+.btn-muted { background: #6c757d; }
+.btn-primary:hover { background:#429646; }
+.btn-secondary:hover { background:#0b78e0; }
+.btn-warning:hover { background:#e58600; }
+.btn-muted:hover { background:#5a6368; }
