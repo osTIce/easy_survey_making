@@ -35,7 +35,7 @@ label {
     color: #444;
 }
 
-input[type="text"], input[type="password"] {
+input[type="email"], input[type="text"], input[type="password"] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -44,7 +44,7 @@ input[type="text"], input[type="password"] {
     box-sizing: border-box;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
+input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focus {
     border-color: #5563DE;
     outline: none;
 }
@@ -79,4 +79,43 @@ input[type="text"]:focus, input[type="password"]:focus {
 
 .extra-links a:hover {
     text-decoration: underline;
+}
+
+.nickname-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.nickname-wrapper input,
+.nickname-wrapper button {
+    height: 44px;
+    font-size: 14px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.nickname-wrapper input {
+    flex: 1;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+}
+
+.nickname-wrapper button {
+    padding: 0 16px;
+    border: none;
+    background: #5563DE;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.nickname-wrapper button:hover {
+    background: #3a47b8;
+}
+
+.nickname-message {
+    font-size: 12px;
+    margin-top: 4px;
 }
