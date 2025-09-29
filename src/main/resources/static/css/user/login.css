@@ -115,7 +115,7 @@ input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focu
     background: #3a47b8;
 }
 
-.nickname-message {
+.message {
     font-size: 12px;
     margin-top: 4px;
 }

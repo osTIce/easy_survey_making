@@ -27,6 +27,7 @@
             <div class="form-group">
                 <label for="email">이메일</label>
                 <input type="email" id="email" name="email" placeholder="이메일을 입력하세요" required>
+                <div id="email-message" class="message"></div>
             </div>
             <div class="form-group">
                 <label for="nickname">닉네임</label>
@@ -34,15 +35,17 @@
                     <input type="text" id="nickname" name="nickname" placeholder="닉네임을 입력하세요" required>
                     <button type="button" id="check-nickname-btn">중복확인</button>
                 </div>
-                <div id="nickname-message" class="nickname-message"></div>
+                <div id="nickname-message" class="message"></div>
             </div>
             <div class="form-group">
                 <label for="signup-password">비밀번호</label>
                 <input type="password" id="signup-password" name="password" placeholder="비밀번호를 입력하세요" required>
+                <div id="password-message" class="message"></div>
             </div>
             <div class="form-group">
                 <label for="confirm-password">비밀번호 확인</label>
                 <input type="password" id="confirm-password" name="confirmPassword" placeholder="비밀번호를 다시 입력하세요" required>
+                <div id="confirm-password-message" class="message"></div>
             </div>
             <button type="submit" class="login-btn">회원가입</button>
         </form>
